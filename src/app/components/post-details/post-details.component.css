@@ -33,3 +33,17 @@
   display: flex;
   flex-direction: row;
 }
+.tags{
+  display: flex;
+}
+.tagSpan{
+  padding: 2px;
+}
+.tag{
+  background-color: rgb(241, 234, 234);
+  padding: 2px;
+  margin-right: 4px;
+}
+.postContent{
+  margin-bottom: 50px;
+}

@@ -2,9 +2,7 @@
   <a routerLink="/">Home Page</a>
 </div>
 
-
 <div class="postContainer">
-
   <div class="postWrapper">
     <mat-card class="postCard">
       <div class="postContent">
@@ -15,6 +13,14 @@
           <p class="postDate">
             {{ postDetails[0]?.date | date: "dd  MMMM YYYY" }}
           </p>
+        </div>
+        <div class="tagsWrapper">
+          <div class="tags">
+            <span class="tagSpan">Tags:</span>
+            <span class="tag">foo</span>
+            <span class="tag">bar</span>
+            <span class="tag">baz</span>
+          </div>
         </div>
       </div>
     </mat-card>
