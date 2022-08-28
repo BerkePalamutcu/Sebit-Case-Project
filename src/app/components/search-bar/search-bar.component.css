@@ -14,6 +14,7 @@
   width: 1020px;
   padding-left: 50px;
   color: white;
+  border-radius: 5px;
 }
 .searchbar::placeholder {
   color: white;
