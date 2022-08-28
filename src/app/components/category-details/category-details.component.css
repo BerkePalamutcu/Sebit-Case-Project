@@ -6,19 +6,15 @@
 }
 .categoryDetailsWrapper{
   display: flex;
-  width: 1050px;
+  width: 1020px;
   flex-direction: column;
   gap: 25px;
 
 }
 .description{
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   max-width: 280ch;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow:clip ellipsis;
-
 }
 .title{
   color: #7961c9;
@@ -63,7 +59,7 @@
   margin-top: 10px;
 }
 .generalInformation{
-  width: 1050px;
+  width: 1020px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +74,7 @@
 .CategoryInformation{
   justify-content: center;
   display: flex;
-  width: 1050px;
+  width: 1020px;
   align-items: center;
   margin-left: 150px;
   margin-top: 30px;
