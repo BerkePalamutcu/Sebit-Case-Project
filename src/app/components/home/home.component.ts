@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(public getItems: CategoriesService) { }
   getResults(value: any){
     this.searchValue = value;
-    console.log(this.searchValue);
   }
   ngOnInit(): void {
     this.getItems.getCategories().subscribe((res) => this.categories.push(...res))
