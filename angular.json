@@ -20,9 +20,22 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/resources/icons/*",
+              "src/assets/resources/icons",
+              "src/assets/resources/icons/search.svg",
+              "src/assets/resources/icons/code.svg",
+              "src/assets/resources/icons/cog.svg",
+              "src/assets/resources/icons/credit-card.svg",
+              "src/assets/resources/icons/download.svg",
+              "src/assets/resources/icons/lock.svg",
+              "src/assets/resources/icons/mail.svg",
+              "src/assets/resources/icons/settings.svg",
+              "src/assets/resources/icons/users.svg"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -90,6 +103,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

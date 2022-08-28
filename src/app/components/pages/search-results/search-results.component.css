@@ -1,0 +1,121 @@
+.categoryDetailsContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 30px;
+
+}
+.categoryDetailsWrapper{
+  display: flex;
+  width: 1050px;
+  flex-direction: column;
+  gap: 25px;
+
+}
+.description{
+  display: -webkit-box;
+  max-width: 280ch;
+  -webkit-box-orient: vertical;
+}
+.title{
+  color: #7961c9;
+  cursor: pointer;
+}
+.readMoreSpan{
+  background-color:  #7961c9;
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  bottom: 0;
+}
+.descriptionContainer{
+  position: relative;
+}
+.avatar{
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.authorTag{
+  font-weight: 300;
+}
+.author{
+  font-weight: 500;
+}
+.profileSection{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.postInfo{
+  margin-bottom: 20px;
+}
+.profileDetails{
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  margin-top: 10px;
+}
+.generalInformation{
+  width: 1050px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.currentCategory{
+  font-weight: 400;
+  color: gray;
+}
+.CategoryInformation{
+  justify-content: center;
+  display: flex;
+  width: 1050px;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.categorySection{
+  line-height: 1px;
+  margin-left: 10px;
+}
+.navigationContainer{
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+.searchedWord{
+  margin-left: 40px;
+}
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #583ABC;
+  height: 250px;
+  flex-direction: column;
+}
+.searchbar {
+  background-color: #7961C9;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 1020px;
+  padding-left: 50px;
+  color: white;
+
+}
+.searchbar::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+.searchIcon{
+  transform: translateX(35px);
+}
+.searchBarHeader{
+  color: white;
+  font-weight: 500;
+}

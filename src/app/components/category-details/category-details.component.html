@@ -1,0 +1,51 @@
+<div class="generalInformation">
+  <div class="navigationContainer">
+    <a routerLink="/"> Home Page</a
+    ><span class="currentCategory"> / {{ categoryData[0]?.name }}</span>
+  </div>
+</div>
+<div class="CategoryInformation">
+  <img
+    class="categoryIcon"
+    src="/assets/resources/icons/{{ categoryData[0]?.icon }}"
+  />
+  <div class="categorySection">
+    <h1 class="categoryHeader">
+      {{ categoryData[0]?.name }} ({{ postsData?.length }})
+    </h1>
+    <p class="info">{{ categoryData[0]?.description }}</p>
+  </div>
+</div>
+<div class="categoryDetailsContainer">
+  <div class="categoryDetailsWrapper">
+    <div *ngFor="let post of postsData; let i = index">
+      <mat-card class="categoryDetailsCard">
+        <!-- <img routerLink="category/{{post[i].id}}"  class="cardImage" src="/assets/resources/icons/{{categoriesData[i].icon}}"/> -->
+        <div class="postInfo">
+          <h1 routerLink="post/{{ postsData[i]?.id }}" class="title">
+            {{ postsData[i]?.title }}
+          </h1>
+          <div class="descriptionContainer">
+            <p class="description">
+              {{ postsData[i]?.description | stringElipsis }}
+              <span
+                routerLink="post/{{ postsData[i]?.id }}"
+                class="readMoreSpan"
+                >read more</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="profileSection">
+          <img class="avatar" src="/assets/resources/images/profile.png" />
+          <div class="profileDetails">
+            <p class="authorTag">
+              Written by <span class="author">{{ postsData[i]?.author }}</span>
+            </p>
+            <p>{{ postsData[i]?.date | date: "dd MMMM YYYY" }}</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

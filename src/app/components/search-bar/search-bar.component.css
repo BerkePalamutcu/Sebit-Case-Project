@@ -1,0 +1,28 @@
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #583abc;
+  height: 250px;
+  flex-direction: column;
+}
+.searchbar {
+  background-color: #7961c9;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 1020px;
+  padding-left: 50px;
+  color: white;
+}
+.searchbar::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+.searchIcon {
+  transform: translateX(35px);
+}
+.searchBarHeader {
+  color: white;
+  font-weight: 500;
+}

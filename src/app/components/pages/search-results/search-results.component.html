@@ -1,0 +1,60 @@
+<div class="searchBarContainer">
+  <h1 class="searchBarHeader">How can we help you?</h1>
+  <div class="inputContainer">
+    <form (submit)="search()">
+      <img class="searchIcon" src="/assets/resources/icons/search.svg" /><input
+      [(ngModel)] = "binding"
+      name="binding"
+        type="text"
+        class="searchbar"
+        placeholder="Search for answers"
+      />
+    </form>
+  </div>
+</div>
+
+<div class="generalInformation">
+  <div class="navigationContainer">
+    <a routerLink="/"> Home Page</a>
+  </div>
+  <div class="searchedWord">
+    <h1>Filtered Posts By: {{ searchedWord.data }}</h1>
+  </div>
+</div>
+
+<div>
+  <div class="categoryDetailsContainer">
+    <div class="categoryDetailsWrapper">
+      <div *ngFor="let post of searchedPosts; let i = index">
+        <mat-card class="categoryDetailsCard">
+          <div class="postInfo">
+            <h1 routerLink="/results/{{ searchedPosts[i]?.id }}" class="title">
+              {{ searchedPosts[i]?.title }}
+            </h1>
+            <div class="descriptionContainer">
+              <p class="description">
+                {{ searchedPosts[i]?.description | stringElipsis }}
+                <span
+                routerLink="/results/{{ searchedPosts[i]?.id }}"
+                class="readMoreSpan"
+                >read more</span
+              >
+              </p>
+            </div>
+          </div>
+
+          <div class="profileSection">
+            <img class="avatar" src="/assets/resources/images/profile.png" />
+            <div class="profileDetails">
+              <p class="authorTag">
+                Written by
+                <span class="author">{{ searchedPosts[i]?.author }}</span>
+              </p>
+              <p>{{ searchedPosts[i]?.date | date: "dd MMMM YYYY" }}</p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

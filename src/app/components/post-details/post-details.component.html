@@ -1,0 +1,22 @@
+<div class="postNavigation">
+  <a routerLink="/">Home Page</a>
+</div>
+
+
+<div class="postContainer">
+
+  <div class="postWrapper">
+    <mat-card class="postCard">
+      <div class="postContent">
+        <h1 class="postHeader">{{ postDetails[0]?.title }}</h1>
+        <p class="postContent">{{ postDetails[0]?.description }}</p>
+        <div class="postDetails">
+          <p class="postAuthor">{{ postDetails[0]?.author }}</p>
+          <p class="postDate">
+            {{ postDetails[0]?.date | date: "dd  MMMM YYYY" }}
+          </p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

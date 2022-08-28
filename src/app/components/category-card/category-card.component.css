@@ -1,0 +1,35 @@
+.categoriesContainer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1050px;
+}
+.mainContainer{
+  display: flex;
+  justify-content: center;
+}
+.categoriesWrapper {
+
+  display: grid;
+  grid-template-columns: 400px 400px;
+  row-gap: 25px;
+  column-gap: 25px;
+
+}
+.categoryCard {
+  display: flex;
+
+}
+.cardHeader{
+  color: #583ABC;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cardContent{
+  margin-left: 40px;
+}
+.cardImage{
+  margin-left: 20px;
+  cursor: pointer;
+}

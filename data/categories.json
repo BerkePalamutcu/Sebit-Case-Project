@@ -1,0 +1,53 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Getting Started",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "cog.svg"
+        },
+        {
+            "id": 2,
+            "name": "User Account",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "users.svg"
+        },
+        {
+            "id": 3,
+            "name": "Product Features",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "settings.svg"
+        },
+        {
+            "id": 4,
+            "name": "Customization Options",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "code.svg"
+        },
+        {
+            "id": 5,
+            "name": "Payment Gateways",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "credit-card.svg"
+        },
+        {
+            "id": 6,
+            "name": "Security Options",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "lock.svg"
+        },
+        {
+            "id": 7,
+            "name": "Digital Downloads",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "download.svg"
+        },
+        {
+            "id": 8,
+            "name": "Email Marketing",
+            "description": "Get started fast with installation and theme setup instructions.",
+            "icon": "mail.svg"
+        }
+
+    ]
+}

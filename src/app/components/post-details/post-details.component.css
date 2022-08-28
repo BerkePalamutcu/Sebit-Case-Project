@@ -1,0 +1,35 @@
+.postNavigation{
+  width: 1020px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+
+}
+.postContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postWrapper{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 1020px;
+}
+.postHeader{
+  font-weight: 500;
+}
+.postAuthor{
+  background-color:  #7961c9;
+  color: white;
+  padding: 3px;
+}
+.postDate{
+  background-color: #F9F9FC;
+  color: #7961c9;
+  padding: 3px;
+}
+.postDetails{
+  display: flex;
+  flex-direction: row;
+}

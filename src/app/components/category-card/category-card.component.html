@@ -1,0 +1,15 @@
+<div class="mainContainer">
+<div class="categoriesContainer">
+<div class="categoriesWrapper">
+<div  *ngFor="let item of categoriesData; let i = index">
+  <mat-card class="categoryCard">
+    <img routerLink="category/{{categoriesData[i].id}}"  class="cardImage" src="/assets/resources/icons/{{categoriesData[i].icon}}"/>
+    <div class="cardContent">
+      <h3 routerLink="category/{{categoriesData[i].id}}" class="cardHeader">{{ categoriesData[i].name }}</h3>
+      <p>{{categoriesData[i].description}}</p>
+    </div>
+  </mat-card>
+</div>
+</div>
+</div>
+</div>
