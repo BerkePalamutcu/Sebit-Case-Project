@@ -14,8 +14,8 @@ export class SearchResultsComponent implements OnInit {
   constructor(public router: Router, public getPostData: PostsService) {}
 
   search() {
-    this.router.navigateByUrl('/').then(() => {
-      this.router.navigateByUrl('/results', {
+    this.router.navigateByUrl("/").then(() => {
+      this.router.navigateByUrl("/results", {
         state: { data: this.binding },
       });
     });
