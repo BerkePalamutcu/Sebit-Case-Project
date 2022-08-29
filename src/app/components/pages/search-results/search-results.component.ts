@@ -22,23 +22,21 @@ export class SearchResultsComponent implements OnInit {
   }
 
   getData() {
-    return this.getPostData
-      .getPosts()
-      .subscribe((res) =>
-        this.searchedPosts.push(
-          ...res
-            .filter(
-              (word) =>
-                word.title
-                  ?.toLowerCase()
-                  .includes(this.binding?.toLowerCase()) ||
-                word.description
-                  ?.toLowerCase()
-                  .includes(this.binding?.toLowerCase())
-            )
-            .sort((a: any, b: any) => b.date - a.date)
-        )
-      );
+    return this.getPostData.getPosts().subscribe((res) =>
+      this.searchedPosts.push(
+        ...res
+          .filter(
+            (word) =>
+              word.title?.toLowerCase().includes(this.binding?.toLowerCase()) ||
+              word.description
+                ?.toLowerCase()
+                .includes(this.binding?.toLowerCase())
+          )
+          .sort((a: any, b: any) => {
+            return b.date > a.date ? 1 : b.date < a.date ? -1 : 0;
+          })
+      )
+    );
   }
 
   ngOnInit(): void {

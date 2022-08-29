@@ -36,7 +36,7 @@ export class CategoryDetailsComponent implements OnInit {
             .filter(
               (post: any) => Number(post.category_id) === Number(this.postIndex)
             )
-            .sort((a: any, b: any) => b.date - a.date)
+            .sort((a: any, b:any)=>{ return b.date > a.date ? 1 : b.date < a.date ? -1 : 0})
         )
       );
   }
